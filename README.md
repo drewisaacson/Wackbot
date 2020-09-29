@@ -10,3 +10,5 @@ To learn the basics behind Discord bots and how to deploy them, follow the tutor
 If you remove the "!" from the `"prefix"` line of `config.json` the bot will no longer require a prefix to be used. In other words, any message sent in your server is scanned by the bot for command phrases ("chaos mode"). You can also change the prefix to the character/phrase of your choice in this manner.
 
 #### DISCLAIMER: The token in the `config.json` file is a placeholder and leads nowhere. To be safe, don't share your access token with others.
+
+It's good to be back.
