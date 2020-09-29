@@ -21,16 +21,19 @@ client.on("message", (message) => {
     const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
     const command = args.shift().toLowerCase();
 
-    // NUMBER OF COMMANDS: 3
+    // NUMBER OF COMMANDS: 4
 	switch(command) {
 		case "ping":
 			message.channel.send("pong!");
 			break;
-		case "bada-bing"
-			message.channel.send("bada-boom")
+		case "bada-bing":
+			message.channel.send("bada-boom");
 			break;
-		case "creeper"
+		case "creeper":
 			message.channel.send("aww man");
+			break;
+		case "bruh":
+			message.channel.send("bruh moment");
 			break;
 	}
 	
