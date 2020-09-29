@@ -10,10 +10,24 @@ Before you get started, a few ground rules you must follow to get your command a
 * Follow the indentation of the previous commands. If something is indented improperly or the wrong syntax is used, you will be asked to fix it.
 * Make sure the phrase you use for your command is not the same as anyone else's (or it won't work). CTRL+F is your friend
 * All commands will be reviewed before being added to Wackbot. Don't be ridiculous.
+* Don't edit any previous code/commands, just add your own
+
+The following subsections detail a contribution tutorial aimed towards beginners. Even if you're familiar with GitHub and/or Discord JS development, it is still worth a quick read so you can understand the project's etiquette.
+
+### Tutorial
+In this tutorial you will learn how to add a simple command to Wackbot. A "simple" command is essentially one where you give a word of input, and the bot spits out a line of output. For example, Wackbot's first command takes in "ping" and sends "pong!" back to the user. *Make sure you have a GitHub account before starting the tutorial.*
 
 ### First Steps
+First you will need to get into the file editor. Luckily, GitHub allows you to edit repository files in your browser. All you need to do is click on `index.js` on the main page, and look for the pencil (edit) icon directly above and to the right of the file text.
 
+![image](https://user-images.githubusercontent.com/72100791/94601261-3b01f780-0261-11eb-92ed-528c5b8b5265.png)
+*Click on the pencil icon (highlighted) to edit the file*
+
+In order to edit the file, GitHub makes a copy of the repository that you are allowed to make changes to and stores it on your account. This is called a **fork**.
+
+Now you should see and be able to edit the `index.js` code in the text editor.
 ### Adding the Command
+The only part of the file you are concerned with is the block of code that starts with ``switch``. You can find it on line 25.
 
 ### Submitting the Command to Wackbot
 
