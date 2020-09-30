@@ -21,7 +21,7 @@ client.on("message", (message) => {
     const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
     const command = args.shift().toLowerCase();
 
-    // NUMBER OF COMMANDS: 4
+    // NUMBER OF COMMANDS: 5
 	switch(command) {
 		case "ping":
 			message.channel.send("pong!");
@@ -35,8 +35,11 @@ client.on("message", (message) => {
 		case "bruh":
 			message.channel.send("bruh moment");
 			break;
+		case "bestmovie":
+ 			message.channel.send("Cars 2");
+  			break;
 	}
-	
+	//END OF SWITCH STATEMENT
 });
  
 // Log the bot in using the token from https://discordapp.com/developers/applications/me
