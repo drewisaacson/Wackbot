@@ -20,16 +20,42 @@ In this tutorial you will learn how to add a simple command to Wackbot. A "simpl
 ### First Steps
 First you will need to get into the file editor. Luckily, GitHub allows you to edit repository files in your browser. All you need to do is click on `index.js` on the main page, and look for the pencil (edit) icon directly above and to the right of the file text.
 
-![image](https://user-images.githubusercontent.com/72100791/94601261-3b01f780-0261-11eb-92ed-528c5b8b5265.png)
+![image](https://user-images.githubusercontent.com/72100791/94601261-3b01f780-0261-11eb-92ed-528c5b8b5265.png) <br/>
 *Click on the pencil icon (highlighted) to edit the file*
 
 In order to edit the file, GitHub makes a copy of the repository that you are allowed to make changes to and stores it on your account. This is called a **fork**.
 
 Now you should see and be able to edit the `index.js` code in the text editor.
 ### Adding the Command
-The only part of the file you are concerned with is the block of code that starts with ``switch``. You can find it on line 25.
+In the text editor, navigate to line 25. `switch(command)` signifies the start of the "switch" statement that handles incoming messages. Take note of the structure of the following lines of code. 
+
+```js
+case "ping":
+  message.channel.send("pong!");
+  break;
+```
+
+The keyword  `case` followed by "ping" and a colon is essentially telling the bot: "if the user types 'ping', execute these lines of code. `message.channel.send("pong!")`, makes the bot send "pong!" back. Finally, the keyword `break` tells the bot to stop executing code, as it has already done what it was supposed to.
+
+For a simple send + receive command, "ping" and "pong!" could be replaced by anything of your choosing. For example, if I wanted Wackbot to respond "Cars 2" when the user types "bestmovie", I would add:
+
+```js
+case "bestmovie":
+  message.channel.send("Cars 2");
+  break;
+```
+
+As long as you follow the syntax from above, only replacing the input and output phrases, you will have a working command. When adding a command, type it directly after the last command in the switch-case block. This is what the previous example would look like in `index.js`:
+
+![image](https://user-images.githubusercontent.com/72100791/94719064-a232b100-0320-11eb-8436-77a940747b71.png) </br>
+*The "bestmovie" command begins right after the last `break` and ends before the closing bracket*
+
+When you are done typing your command(s), please also change the counter for total commands (Line 24) so it is up to date.
 
 ### Submitting the Command to Wackbot
+
+## Wackbot Deployment
+Wackbot has yet to be deployed on an official server. This section will be updated if Wackbot is launched anywhere.
 
 ## Use Wackbot in your server
 To learn the basics behind Discord bots and how to deploy them, follow the tutorial over at my repository [SuperSimpleBot](https://github.com/IMACULGY/SuperSimpleBot). If you want to use Wackbot, download Wackbot's files instead of SuperSimpleBot's files when the tutorial says to do so.
