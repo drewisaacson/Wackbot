@@ -35,6 +35,9 @@ client.on("message", (message) => {
 		case "bruh":
 			message.channel.send("bruh moment");
 			break;
+		case "bestmovie":
+			message.channel.send("Cars 2");
+			break;
 	}
 	
 });
